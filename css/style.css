@@ -1,0 +1,157 @@
+@import url('https://fonr.googleapis.com/css2?family=Fugaz+One&family=Nunito&display=swap');
+
+/* RESET */
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+
+}
+
+
+/* VARIABLES */
+:root{
+   /* FONT*/
+   --FF: "Ninito", sans-serif;
+   --FT-HEADINGS: "Fugaz One", cursive;
+   --FS: clamp(1rem, 2.2vh, 1rem);
+
+   /* COLORS */
+   --BGCOLOR: #220812;
+   --BGCOLOR-FADE: rgba(187, 82, 109, 0.959);
+   --BGIMAGE: linear-gradient(to bottom, var(--BGCOLOR), var(--BGCOLOR-FADE));
+   --BODY-BGCOLOR: rgba(3, 0, 1, 0.158);
+   --FONT-COLOR: #f0e3ef;
+   --BORDER-COLOR: rgb(10, 1, 1);
+   --HIGHLIGHT-COLOR: rgb(159, 199, 159);
+   --LINK-COLOR: #000;
+   --LINK-HOVER: hsla(0, 0%, 0%, 0.6);
+   --LINK-ACTIVE: orange;
+   --HEADER-BGCOLOR: #12033b;
+   --HEADER-COLOR: #fff;
+   --NAV-BGCOLOR: #fff;
+   
+   /* BORDER */
+   --BORDER: 1px double var(--BORDER-COLOR)
+
+   /* STANDARD PADDING */
+   --PADDING-TB: 0.25em;
+   --PADDING-SIDE: 2.5%;
+
+   /* STANDARD MARGIN */
+   --MARGIN: clamp(1em, 2.5vh, 1.5em, 0)
+
+}
+
+
+
+/* GENERAL STYLE */
+
+body{   
+   width: 100%;
+   background-color: var(--BGCOLOR);
+   color: var(--FONT-COLOR) ;
+   font-size: var(--FS);
+   font-family: var(--FF);
+}
+
+#header-nav {
+   background-color: #f6b319;
+   border-radius: 0;
+   border: 0;
+}
+
+/**/
+.navbar-brand h1 {
+   font-family: var(--FF); 
+   text-shadow: 1px 1px 1px #222;
+   margin-top: 1rem;
+   margin-bottom: 0;
+   line-height: .7;
+   vertical-align: middle;
+      color: var(  --HIGHLIGHT-COLOR);
+   text-transform: uppercase;
+   font-size: 1.9rem;
+}
+#nav-list a,
+#nav-list a:hover,
+#nav-list a:focus {
+   text-decoration: none;
+}
+ #nav-list {
+   margin-top: 10px;
+}
+
+#nav-list a {
+   color: #951c49;
+   text-align: center;
+   padding: 15px;
+  /**/
+}
+
+#nav-list a:hover {
+   background: #ccc;
+}
+/**/
+
+.navbar-header button.navbar-toggler {
+   clear: both;
+}
+
+.navbar-nav {
+   text-align: center;
+   
+}
+.navbar-nav li {
+   padding-top: 15px;
+}
+.navbar-nav li a:hover {
+     background: #ccc;
+     display: block;
+}
+
+#chiken-tile, #beef-tile, #sushi-tile {
+   height: 250px;
+   width: 100%;
+   margin-top: 25px;
+   position: relative;
+   border: 2px solid #3f0c1f;
+   overflow: hidden;
+}
+#home-tile {
+   margin: 15px;
+}
+p {
+   padding: 15px;
+}
+/*LARGE DEVICE ONLY*/
+
+@media (min-width: 1200px) {
+}
+
+/*MEDIUM DEVICES ONLY*/
+@media (min-width: 992px) and (max-width: 1199px)
+{
+ /* HEADER */
+ #logo-img{
+   background: url('../img/med.png') no-repeat;
+   width: 100px;
+   height: 100px;
+   border: var(--BORDER);
+   border-radius: 50%;
+   margin: 5px 5px 5px 0;   
+   outline: 1.5px solid var(--HIGHLIGHT-COLOR);
+   outline-offset: 3px;
+ }
+}
+/*SMALL DEVICES ONLY*/
+@media (min-width: 768px) and (max-width: 991px)
+{
+
+}
+
+/* EXTRAL SMALL DEVICES ONLY*/
+@media  (max-width: 767px)
+{
+
+}
